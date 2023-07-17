@@ -3,7 +3,8 @@
 #include <stdio.h>
 
 /**
- * main - Determine if a number is positive, negagive or zero.
+ * main - Determine if a number is positive.
+ * negagive or zero.
  * Return: Always 0 (Success)
  */
 int main(void)
@@ -12,7 +13,6 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-
 	if (n > 0)
 	{
 		printf("%d is positive\n", n);
