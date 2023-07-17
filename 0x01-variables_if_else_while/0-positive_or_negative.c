@@ -8,22 +8,21 @@
  */
 int main(void)
 {
-	srand(time(0));
-	int n = rand();
+	int n;
 
-	std::cout << "The number is " << n << " and it is ";
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
 	if (n > 0)
 	{
-	std::cout << "positive";
+		printf("%d is positive\n", n);
 	}
 	else if (n == 0)
 	{
-	std::cout << "zero";
+		printf("%d is zero\n", n);
 	}
 	else
 	{
-	std::cout << "negative";
+		printf("%d is negative\n", n);
 	}
-	std::cout << std::endl;
 	return (0);
 }
