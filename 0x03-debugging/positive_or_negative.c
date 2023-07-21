@@ -2,6 +2,7 @@
 /**
  * positive_or_negative - Determine if a number is positive.
  * negagive or zero.
+ * @i: value passed
  * Return: Always 0 (Success)
  */
 void positive_or_negative(int i)
@@ -18,5 +19,4 @@ void positive_or_negative(int i)
 	{
 		printf("%d is %s\n", i, "zero");
 	}
-	return;
 }
