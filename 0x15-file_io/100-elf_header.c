@@ -6,6 +6,10 @@
 #include <string.h>
 #include <sys/types.h>
 
+void print_error(char *msg);
+void print_elf_header(Elf64_Ehdr *header);
+int main(int argc, char *argv[]);
+
 /**
  * print_error - Print error message to stderr and exit with status 98
  * @msg: Error message to print
